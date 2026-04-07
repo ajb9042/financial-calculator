@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Financial Calculators</title>
+</head>
+<body>
+    <h1>Financial Calculators</h1>
+    <hr>
+
+    <section>
+        <h2>1. Compound Interest Calculator</h2>
+        <p>Calculate how much money grows over time.</p>
+        <label>Principal ($):</label><br>
+        <input type="number" id="ci-principal" value="1000"><br>
+        <label>Annual Interest Rate (%):</label><br>
+        <input type="number" id="ci-rate" value="5"><br>
+        <label>Years:</label><br>
+        <input type="number" id="ci-years" value="10"><br>
+        <button onclick="">Calculate</button>
+        <p><strong>Result: $<span id="ci-result">0.00</span></strong></p>
+    </section>
+    <hr>
+    <section>
+        <h2>2. Mortgage Calculator</h2>
+        <p>Dertmine monthly fixed-rate mortgage payment.</p>
+        <label>Loan Amount ($):</label><br>
+        <input type="number" id="m-amount" value="250000"><br>
+        <label>Interest Rate (%):</label><br>
+        <input type="number" id="m-rate" value="6"><br>
+        <label>Loan Term (Years):</label><br>
+        <input type="number" id="m-years" value="30"><br>
+        <button onclick="">Calculate</button>
+        <p><strong>Result: $<span id="m-result">0.00</span></strong></p>
+    </section>
+</body>
+
+</html>
