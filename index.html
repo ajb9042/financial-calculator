@@ -19,7 +19,7 @@
         <input type="number" id="ci-rate" value="5"><br>
         <label>Years:</label><br>
         <input type="number" id="ci-years" value="10"><br>
-        <button onclick="">Calculate</button>
+        <button onclick="calcCompoundInterest()">Calculate</button>
         <p><strong>Result: $<span id="ci-result">0.00</span></strong></p>
     </section>
     <hr>
@@ -33,7 +33,7 @@
         <input type="number" id="m-rate" value="6"><br>
         <label>Loan Term (Years):</label><br>
         <input type="number" id="m-years" value="30"><br>
-        <button onclick="">Calculate</button>
+        <button onclick="calcCompoundInterest()">Calculate</button>
         <p><strong>Result: $<span id="m-result">0.00</span></strong></p>
     </section>
     <hr>
@@ -45,7 +45,7 @@
         <input type="number" id="roi-invested" value="5000"><br>
         <label>Amount Returned ($):</label><br>
         <input type="number" id="roi-returned" value="6500"><br>
-        <button onclick="">Calculate</button>
+        <button onclick="calcROI()">Calculate</button>
         <p><strong>ROI: <span id="roi-result">0</span>%</strong></p>
     </section>
     <hr>
@@ -57,7 +57,7 @@
         <input type="number" id="sg-goal" value="10000"><br>
         <label>Timeframe (Months):</label><br>
         <input type="number" id="sg-months" value="24"><br>
-        <button onclick="">Calculate</button>
+        <button onclick="calcSavings()">Calculate</button>
         <p><strong>Monthly Savings Needed: $<span id="sg-result">0</span></strong></p>
     </section>
     <hr>
@@ -69,7 +69,7 @@
         <input type="number" id="inf-amount" value="1000"><br>
         <label>Years into Future:</label><br>
         <input type="number" id="inf-years" value="10"><br>
-        <button onclick="">Calculate</button>
+        <button onclick="calcInflation()">Calculate</button>
         <p><strong>Purchasing Power Today: $<span id="inf-result">0.00</span></strong></p>
     </section>
 
