@@ -2,6 +2,8 @@
 
 This is a web app that offers a seamless way for financial professionals to access different financial calculators. Professionals frequently need to switch between multiple formulas. This app helps provide multiple formulas in one location.
 
+Access the site [here](https://ajb9042.github.io/financial-calculator/).
+
 ## Installation/Setup
 
 The app can be hosted locally and accessed by opening the index.html file in a browser. Alternatively, the app can be hosted on a web server or hosting provider.
