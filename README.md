@@ -26,6 +26,8 @@ To do...
 
 ## Future Development
 
+* Reset button
+* Easy copy/paste buttons
 * Add more formulas
 * Add cross-device syncing
 * Calculation history
