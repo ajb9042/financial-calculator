@@ -1,0 +1,106 @@
+<div class="calculator-app">
+  <div class="app-header">
+    <h1>Finance Toolkit</h1>
+    <p>Quick calculators for compound interest, mortgage, ROI, savings, and inflation.</p>
+  </div>
+
+  <div class="calculator-grid">
+    <!-- 1. Compound Interest -->
+    <div class="calc-card">
+      <h2>Compound Interest</h2>
+      <small>Future value of an investment with annual compounding.</small>
+
+      <div class="form-group">
+        <label for="ci-principal">Principal ($)</label>
+        <input id="ci-principal" type="number" />
+      </div>
+      <div class="form-group">
+        <label for="ci-rate">Annual Rate (%)</label>
+        <input id="ci-rate" type="number" step="0.01" />
+      </div>
+      <div class="form-group">
+        <label for="ci-years">Years</label>
+        <input id="ci-years" type="number" />
+      </div>
+
+      <button class="calc-button" onclick="calcCompoundInterest()">Calculate</button>
+      <div class="result">Amount: $<span id="ci-result">0.00</span></div>
+    </div>
+
+    <!-- 2. Mortgage -->
+    <div class="calc-card">
+      <h2>Mortgage Payment</h2>
+      <small>Monthly payment for a fixed-rate mortgage.</small>
+
+      <div class="form-group">
+        <label for="m-amount">Loan Amount ($)</label>
+        <input id="m-amount" type="number" />
+      </div>
+      <div class="form-group">
+        <label for="m-rate">Annual Rate (%)</label>
+        <input id="m-rate" type="number" step="0.01" />
+      </div>
+      <div class="form-group">
+        <label for="m-years">Term (years)</label>
+        <input id="m-years" type="number" />
+      </div>
+
+      <button class="calc-button" onclick="calcMortgage()">Calculate</button>
+      <div class="result">Monthly: $<span id="m-result">0.00</span></div>
+    </div>
+
+    <!-- 3. ROI -->
+    <div class="calc-card">
+      <h2>Return on Investment</h2>
+      <small>Percentage gain or loss on an investment.</small>
+
+      <div class="form-group">
+        <label for="roi-invested">Initial Investment ($)</label>
+        <input id="roi-invested" type="number" />
+      </div>
+      <div class="form-group">
+        <label for="roi-returned">Final Value ($)</label>
+        <input id="roi-returned" type="number" />
+      </div>
+
+      <button class="calc-button" onclick="calcROI()">Calculate</button>
+      <div class="result">ROI: <span id="roi-result">0.00</span>%</div>
+    </div>
+
+    <!-- 4. Savings Goal -->
+    <div class="calc-card">
+      <h2>Savings Goal</h2>
+      <small>Monthly amount needed to hit your target.</small>
+
+      <div class="form-group">
+        <label for="sg-goal">Goal Amount ($)</label>
+        <input id="sg-goal" type="number" />
+      </div>
+      <div class="form-group">
+        <label for="sg-months">Months</label>
+        <input id="sg-months" type="number" />
+      </div>
+
+      <button class="calc-button" onclick="calcSavings()">Calculate</button>
+      <div class="result">Needed per month: $<span id="sg-result">0.00</span></div>
+    </div>
+
+    <!-- 5. Inflation -->
+    <div class="calc-card">
+      <h2>Inflation Adjuster</h2>
+      <small>What a future amount is worth in today's dollars (3% assumed).</small>
+
+      <div class="form-group">
+        <label for="inf-amount">Future Amount ($)</label>
+        <input id="inf-amount" type="number" />
+      </div>
+      <div class="form-group">
+        <label for="inf-years">Years Ahead</label>
+        <input id="inf-years" type="number" />
+      </div>
+
+      <button class="calc-button" onclick="calcInflation()">Calculate</button>
+      <div class="result">Today's value: $<span id="inf-result">0.00</span></div>
+    </div>
+  </div>
+</div>
