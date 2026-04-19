@@ -3,14 +3,17 @@
 <head>
     <meta charset="UTF-8">
     <title>Financial Calculators</title>
+    <link rel="stylesheet" href="styles.css">
 </head>
 
 <body>
+
+<div class="container">   
     <h1>Financial Calculators</h1>
     <hr>
 
     <!-- 1. Compound Interest Calculator -->
-    <section>
+    <div class="calculator">
         <h2>1. Compound Interest Calculator</h2>
         <p>Calculate how much money grows over time.</p>
         <label>Principal ($):</label><br>
@@ -20,11 +23,12 @@
         <label>Years:</label><br>
         <input type="number" id="ci-years" value="10"><br>
         <button onclick="calcCompoundInterest()">Calculate</button>
-        <p><strong>Result: $<span id="ci-result">0.00</span></strong></p>
-    </section>
+        <div id="ci-result" class="result"></div>
+    </div>
+    
     <hr>
     <!-- 2. Mortage Calculator -->
-    <section>
+    <div class="calculator">
         <h2>2. Mortgage Calculator</h2>
         <p>Dertmine monthly fixed-rate mortgage payment.</p>
         <label>Loan Amount ($):</label><br>
@@ -34,11 +38,12 @@
         <label>Loan Term (Years):</label><br>
         <input type="number" id="m-years" value="30"><br>
         <button onclick="calcMortgage()">Calculate</button>
-        <p><strong>Result: $<span id="m-result">0.00</span></strong></p>
-    </section>
+        <div id="ci-result" class="result"></div>
+    </div>
+    
     <hr>
     <!-- 3. ROI Calculator -->
-    <section>
+    <div class="calculator">
         <h2>3. ROI Calculator</h2>
         <p>Gain or loss on an investment.</p>
         <label>Amount Invested ($):</label><br>
@@ -46,11 +51,12 @@
         <label>Amount Returned ($):</label><br>
         <input type="number" id="roi-returned" value="6500"><br>
         <button onclick="calcROI()">Calculate</button>
-        <p><strong>ROI: <span id="roi-result">0</span>%</strong></p>
-    </section>
+        <div id="ci-result" class="result"></div>
+    </div>
+    
     <hr>
     <!-- 4. Savings Goal Calculator -->
-    <section>
+    <div class="calculator">
         <h2>4. Savings Goal Calculator</h2>
         <p>Find out how much to save monthly.</p>
         <label>Target Goal ($):</label><br>
@@ -58,11 +64,12 @@
         <label>Timeframe (Months):</label><br>
         <input type="number" id="sg-months" value="24"><br>
         <button onclick="calcSavings()">Calculate</button>
-        <p><strong>Monthly Savings Needed: $<span id="sg-result">0</span></strong></p>
-    </section>
+        <div id="ci-result" class="result"></div>
+    </div>
+    
     <hr>
     <!-- 5. Inflation Calculator -->
-    <section>
+    <div class="calculator">
         <h2>5. Inflation Calculator</h2>
         <p>What a future sum is worth in todays buying power (assumes 3% inflation).</p>
         <label>Future Amount ($):</label><br>
@@ -70,8 +77,9 @@
         <label>Years into Future:</label><br>
         <input type="number" id="inf-years" value="10"><br>
         <button onclick="calcInflation()">Calculate</button>
-        <p><strong>Purchasing Power Today: $<span id="inf-result">0.00</span></strong></p>
-    </section>
+        <div id="ci-result" class="result"></div>
+    </div>
+</div>
 
     <!-- References script for calculator logic. -->
     <script src="scripts.js"></script>
