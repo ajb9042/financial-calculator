@@ -22,7 +22,9 @@ The app can be hosted locally and accessed by opening the index.html file in a b
 
 ## Demo Video
 
-To do...
+
+https://github.com/user-attachments/assets/307b851e-75e6-4cb0-b47c-36f669d64cdd
+
 
 ## Future Development
 
