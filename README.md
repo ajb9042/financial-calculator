@@ -6,9 +6,13 @@ Access the site [here](https://ajb9042.github.io/financial-calculator/).
 
 ## Installation/Setup
 
-The app can be hosted locally and accessed by opening the index.html file in a browser. Alternatively, the app can be hosted on a web server or hosting provider.
+1. Clone the GitHub repo
+2. Open index.html
+
+Alternatively, the app can be hosted on a web server or hosting provider.
 
 ## Features
+
 * Calculators for compound interest, mortgage, ROI, savings goal, and inflation.
 * Access from any device online
 * Quick computations
@@ -33,3 +37,9 @@ https://github.com/user-attachments/assets/307b851e-75e6-4cb0-b47c-36f669d64cdd
 * Add more formulas
 * Add cross-device syncing
 * Calculation history
+* Pin calculators
+* Dynamically create calculators from formulas
+
+## Contact
+
+Andrew - ajb9042@psu.edu
